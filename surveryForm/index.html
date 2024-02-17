@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='styles.css'>
+</head>
+
+<body>
+    <h1 id='title'>Kisibo's Blog Survey Form</h1>
+    <p id='description'>Thank you for taking the time to help me improve my blog platform</p>
+    <form id='survey-form'>
+        <label for='name' id="name-label">
+            Name </label>
+        <input id='name' type='text' placeholder='Full Name' required>
+
+        <label for='email' id="email-label">
+            Email </label>
+        <input id='email' type='email' placeholder='Email@com.com' required>
+        <label for='number' id="number-label">
+            Age (optional) </label>
+        <input id='number' type='number' min='14' max='100' placeholder='Your Age' required>
+        <label for='dropdown'>Which option best describes your current role?</label>
+        <select id="dropdown">
+            <option value=''>(Select One)</option>
+            <option value='student'>Student</option>
+            <option value='teacher'>Teacher</option>
+            <option value='webdev'>Web Developer</option>
+            <option value='techguru'>Tech guru</option>
+        </select>
+
+        <fieldset>
+            <legend>
+                What is you recommend my Blog Page to others?
+            </legend>
+            <label class='inline'>
+                <input type='radio' name='recommend' value='yes'> Yes
+            </label>
+            <label class='inline'>
+                <input type='radio' name='recommend' value='no'> No
+            </label>
+            <label class='inline'>
+                <input type='radio' name='recommend' value='notsure'> Not Sure
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Which option(s) describe your field? (Check all that apply)</legend>
+            <label class='inline' for='checkbox'>
+                <input id='checkbox' type='checkbox' value='checkbox-option'> IT expert</label>
+            <label class='inline' for='checkbox'>
+                <input id='checkbox' type='checkbox' value='checkbox-option'> Software Engineer</label>
+            <label class='inline' for='checkbox'>
+                <input id='checkbox' type='checkbox' value='checkbox-option'> Cyber Security</label>
+            <label class='inline' for='checkbox'>
+                <input id='checkbox' type='checkbox' value='checkbox-option'> System Administrator </label>
+            <label class='inline' for='checkbox'>
+                <input id='checkbox' type='checkbox' value='checkbox-option'> System Engineer</label>
+        </fieldset>
+
+        <label for="comments">Do you have any additional Comments?</label>
+        <textarea id="comments" placeholder="Type your comments here" rows='4' cols='30'></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
